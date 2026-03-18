@@ -45,14 +45,14 @@ export default function SolutionSection() {
   const ref = useReveal();
 
   return (
-    <section ref={ref} id="diferenciais" className="px-20 py-20">
-      <div className="flex flex-col gap-12">
+    <section ref={ref} id="diferenciais" className="px-5 md:px-8 lg:px-20 py-12 lg:py-20">
+      <div className="flex flex-col gap-8 md:gap-12">
         {/* Header */}
         <div className="flex flex-col gap-4">
           <span className="reveal text-[10px] font-normal tracking-[0.25em] text-text-tertiary font-sans">
             DIFERENCIAIS
           </span>
-          <h2 className="reveal font-mono text-[40px] font-medium leading-[1.1] text-text-primary">
+          <h2 className="reveal font-mono text-[28px] md:text-[32px] lg:text-[40px] font-medium leading-[1.1] text-text-primary">
             Por que a Sensing é a escolha de gestores inteligentes?
           </h2>
         </div>
@@ -60,11 +60,11 @@ export default function SolutionSection() {
         {/* Card grid */}
         <div className="flex flex-col gap-0 stagger">
           {/* Row 1 */}
-          <div className="flex gap-0">
+          <div className="flex flex-col md:flex-row gap-0">
             {cards.slice(0, 2).map((card) => (
               <div
                 key={card.title}
-                className={`reveal card-hover flex-1 flex flex-col gap-3 p-8 h-[280px] ${card.bg}`}
+                className={`reveal card-hover flex-1 flex flex-col gap-3 p-5 md:p-6 lg:p-8 min-h-[220px] md:h-[280px] ${card.bg}`}
               >
                 <span
                   className={`text-[10px] font-normal tracking-[0.25em] font-sans ${card.textMicro}`}
@@ -72,7 +72,7 @@ export default function SolutionSection() {
                   {card.micro}
                 </span>
                 <h3
-                  className={`font-mono text-[22px] font-extralight ${card.textTitle}`}
+                  className={`font-mono text-lg lg:text-[22px] font-extralight ${card.textTitle}`}
                 >
                   {card.title}
                 </h3>
@@ -85,11 +85,11 @@ export default function SolutionSection() {
             ))}
           </div>
           {/* Row 2 */}
-          <div className="flex gap-0">
+          <div className="flex flex-col md:flex-row gap-0">
             {cards.slice(2, 4).map((card) => (
               <div
                 key={card.title}
-                className={`reveal card-hover flex-1 flex flex-col gap-3 p-8 h-[280px] ${card.bg}`}
+                className={`reveal card-hover flex-1 flex flex-col gap-3 p-5 md:p-6 lg:p-8 min-h-[220px] md:h-[280px] ${card.bg}`}
               >
                 <span
                   className={`text-[10px] font-normal tracking-[0.25em] font-sans ${card.textMicro}`}
@@ -97,7 +97,7 @@ export default function SolutionSection() {
                   {card.micro}
                 </span>
                 <h3
-                  className={`font-mono text-[22px] font-extralight ${card.textTitle}`}
+                  className={`font-mono text-lg lg:text-[22px] font-extralight ${card.textTitle}`}
                 >
                   {card.title}
                 </h3>

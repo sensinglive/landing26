@@ -28,9 +28,15 @@ body {
 /* Scroll-triggered reveal animations */
 .reveal {
   opacity: 0;
-  transform: translateY(32px);
+  transform: translateY(24px);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 1024px) {
+  .reveal {
+    transform: translateY(32px);
+  }
 }
 
 .reveal.visible {
@@ -53,8 +59,14 @@ body {
 /* Hero-specific entrance */
 .hero-enter {
   opacity: 0;
-  transform: translateY(48px);
+  transform: translateY(32px);
   animation: heroReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (min-width: 1024px) {
+  .hero-enter {
+    transform: translateY(48px);
+  }
 }
 
 .hero-enter-delay-1 { animation-delay: 0.15s; }
@@ -68,15 +80,17 @@ body {
   }
 }
 
-/* Card hover lift */
-.card-hover {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
+/* Card hover lift — desktop only */
+@media (min-width: 1024px) {
+  .card-hover {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
 
-.card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.12);
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.12);
+  }
 }
 
 /* Underline hover for nav links */
@@ -138,4 +152,16 @@ input:focus {
 @keyframes countUp {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .hero-enter,
+  .card-hover {
+    transition: none;
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }

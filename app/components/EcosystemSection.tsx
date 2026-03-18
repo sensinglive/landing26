@@ -42,28 +42,28 @@ export default function EcosystemSection() {
   const ref = useReveal();
 
   return (
-    <section ref={ref} id="tecnologia" className="px-20 py-20">
-      <div className="flex flex-col gap-16">
+    <section ref={ref} id="tecnologia" className="px-5 md:px-8 lg:px-20 py-12 lg:py-20">
+      <div className="flex flex-col gap-8 md:gap-12 lg:gap-16">
         <span className="reveal text-[10px] font-normal tracking-[0.25em] text-text-tertiary font-sans">
           ECOSSISTEMA
         </span>
         <div className="reveal h-px bg-divider" />
-        <h2 className="reveal font-mono text-[80px] font-bold leading-[0.95] text-text-primary">
+        <h2 className="reveal font-mono text-[36px] md:text-[56px] lg:text-[80px] font-bold leading-[1.05] lg:leading-[0.95] text-text-primary">
           O Ecossistema
           <br />
           Sensing.
         </h2>
-        <p className="reveal font-sans text-base font-normal leading-[1.6] text-text-secondary max-w-[600px]">
+        <p className="reveal font-sans text-sm md:text-base font-normal leading-[1.6] text-text-secondary max-w-full md:max-w-[600px]">
           Três componentes integrados que garantem monitoramento contínuo e
           confiável da sua cadeia fria.
         </p>
 
         {/* Cards */}
-        <div className="flex gap-0 stagger">
+        <div className="flex flex-col md:flex-row gap-0 stagger">
           {ecosystemCards.map((card) => (
             <div
               key={card.title}
-              className={`reveal card-hover flex-1 flex flex-col justify-between p-8 min-h-[320px] ${card.bg}`}
+              className={`reveal card-hover flex-1 flex flex-col justify-between p-5 md:p-6 lg:p-8 min-h-[260px] md:min-h-[320px] ${card.bg}`}
             >
               <div className="flex flex-col gap-1">
                 <span
@@ -74,7 +74,7 @@ export default function EcosystemSection() {
               </div>
               <div className="flex flex-col gap-3">
                 <h3
-                  className={`font-mono text-[28px] font-extralight ${card.titleColor}`}
+                  className={`font-mono text-xl md:text-2xl lg:text-[28px] font-extralight ${card.titleColor}`}
                 >
                   {card.title}
                 </h3>
