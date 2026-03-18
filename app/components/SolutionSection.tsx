@@ -53,7 +53,7 @@ export default function SolutionSection() {
             DIFERENCIAIS
           </span>
           <h2 className="reveal font-mono text-[28px] md:text-[32px] lg:text-[40px] font-medium leading-[1.1] text-text-primary">
-            Por que a Sensing é a escolha de gestores inteligentes?
+            Tecnologia que resolve problemas reais do setor público.
           </h2>
         </div>
 

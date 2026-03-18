@@ -50,7 +50,7 @@ export default function Header() {
 
         <a href="#cta" className="hidden md:flex cta-btn border border-text-primary/20 px-5 py-2.5 cursor-pointer">
           <span className="font-sans text-[13px] font-bold tracking-[0.08em] text-text-primary">
-            SOLICITAR DEMO ↗
+            AGENDAR DEMO ↗
           </span>
         </a>
 
@@ -87,7 +87,7 @@ export default function Header() {
             className="cta-btn inline-flex items-center self-start border border-text-primary/20 px-5 py-3 cursor-pointer"
           >
             <span className="font-sans text-[13px] font-bold tracking-[0.08em] text-text-primary">
-              SOLICITAR DEMO ↗
+              AGENDAR DEMO ↗
             </span>
           </a>
         </div>

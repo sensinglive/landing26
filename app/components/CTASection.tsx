@@ -54,12 +54,14 @@ export default function CTASection() {
         </span>
         <div className="reveal h-px bg-white/10" />
         <h2 className="reveal font-mono text-[36px] md:text-[56px] lg:text-[88px] font-bold leading-[1.05] lg:leading-[0.95] text-white">
-          Não espere o
+          Comece em
           <br />
-          alarme tocar.
+          minutos. Sem
+          <br className="hidden lg:block" />
+          obra. Sem TI.
         </h2>
         <p className="reveal font-sans text-base md:text-lg font-normal leading-[1.6] text-white/60">
-          Junte-se à evolução do monitoramento de cadeia fria.
+          Agende uma demonstração e veja como funciona na prática.
         </p>
 
         {status === "success" ? (

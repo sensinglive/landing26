@@ -4,20 +4,20 @@ import { useReveal } from "../hooks/useReveal";
 
 const risks = [
   {
-    title: "Prejuízos Financeiros",
-    desc: "Perda de insumos de alto custo por falhas de monitoramento que poderiam ter sido evitadas.",
+    title: "Perda de Insumos Públicos",
+    desc: "Vacinas descartadas por falha de monitoramento representam desperdício direto de recurso público.",
   },
   {
-    title: "Riscos Jurídicos",
-    desc: "Multas pesadas e interdições da Vigilância Sanitária por não-conformidade com normas da Anvisa.",
+    title: "Interdição e Multas",
+    desc: "Não-conformidade com a RDC 430 da Anvisa pode resultar em interdição da unidade e processo administrativo.",
   },
   {
-    title: "Falhas Invisíveis",
-    desc: "Sua geladeira pode estar prestes a quebrar agora, e você só vai descobrir quando a temperatura subir.",
+    title: "Falhas Sem Rastreabilidade",
+    desc: "Sem monitoramento contínuo, não há como comprovar que a cadeia fria foi mantida durante uma auditoria.",
   },
   {
-    title: "Trabalho Manual",
-    desc: "Sua equipe perdendo tempo precioso preenchendo planilhas de papel que podem conter erros.",
+    title: "Registro Manual",
+    desc: "Planilhas de papel não têm validade legal, estão sujeitas a erro humano e não geram alertas.",
   },
 ];
 
@@ -33,11 +33,11 @@ export default function RiskSection() {
             O RISCO
           </span>
           <h2 className="reveal font-mono text-[28px] md:text-[32px] lg:text-[40px] font-medium leading-[1.1] text-text-primary">
-            O custo do &ldquo;eu não sabia&rdquo; é alto demais.
+            Sua unidade está em conformidade agora?
           </h2>
           <p className="reveal font-sans text-sm md:text-base font-normal leading-[1.6] text-text-secondary max-w-full md:max-w-[700px]">
-            Você sabia que uma oscilação de 2 graus pode invalidar um lote
-            inteiro de vacinas?
+            Uma oscilação de 2°C pode invalidar um lote inteiro — e gerar
+            interdição pela Vigilância Sanitária.
           </p>
         </div>
 

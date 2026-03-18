@@ -1,15 +1,14 @@
 const footerCols = [
   {
-    title: "PRODUTO",
-    links: ["Sensor S2 Pro", "Smart Plug P1", "Gateway G1", "Dashboard"],
-  },
-  {
     title: "EMPRESA",
-    links: ["Sobre nós", "Contato", "Blog"],
+    links: [{ label: "Contato", href: "#cta" }],
   },
   {
     title: "LEGAL",
-    links: ["Termos de Uso", "Privacidade"],
+    links: [
+      { label: "Termos de Uso", href: "#" },
+      { label: "Privacidade", href: "#" },
+    ],
   },
 ];
 
@@ -21,7 +20,7 @@ export default function Footer() {
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           <div className="flex flex-col gap-4 max-w-full md:max-w-[340px]">
             <a href="#">
-              <img src="/sensing_26_logo_f.svg" alt="Sensing" className="h-10 md:h-12" />
+              <img src="/sensing_26_logo_f_w.svg" alt="Sensing" className="h-10 md:h-12" />
             </a>
             <p className="font-sans text-sm font-normal leading-[1.6] text-white/30">
               Monitoramento inteligente.
@@ -30,7 +29,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-6 md:flex md:gap-20">
+          <div className="grid grid-cols-2 gap-6 md:flex md:gap-20">
             {footerCols.map((col) => (
               <div key={col.title} className="flex flex-col gap-3.5">
                 <span className="text-[10px] font-normal tracking-[0.15em] text-white/25 font-sans">
@@ -38,11 +37,11 @@ export default function Footer() {
                 </span>
                 {col.links.map((link) => (
                   <a
-                    key={link}
-                    href="#"
+                    key={link.label}
+                    href={link.href}
                     className="font-sans text-xs md:text-[13px] font-normal text-white/50 hover:text-white/80 transition-colors"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 ))}
               </div>
@@ -54,12 +53,9 @@ export default function Footer() {
         <div className="h-px bg-white/8" />
 
         {/* Bottom row */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center">
           <span className="font-sans text-[10px] md:text-xs font-normal text-white/25">
             © 2026 Sensing. Todos os direitos reservados.
-          </span>
-          <span className="font-sans text-[10px] md:text-xs font-normal tracking-[0.08em] text-white/25">
-            LGPD
           </span>
         </div>
       </div>
