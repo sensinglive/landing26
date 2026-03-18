@@ -9,7 +9,7 @@ const footerCols = [
   {
     title: "LEGAL",
     links: [
-      { label: "Termos de Uso", href: "#" },
+      { label: "Termos de Uso", href: "/termos" },
       { label: "Privacidade", href: "#" },
     ],
   },
