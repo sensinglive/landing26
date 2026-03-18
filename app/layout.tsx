@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sensing — Monitoramento Inteligente de Cadeia Fria",
+  title: "Sensing — Monitoramento Inteligente",
   description:
     "A única solução de monitoramento de cadeia fria que não apenas registra o passado, mas prevê o futuro.",
 };

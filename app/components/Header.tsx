@@ -21,12 +21,9 @@ export default function Header() {
           : "bg-bg-page"
       }`}
     >
-      <a
-        href="#"
-        className="font-mono text-sm font-extralight tracking-[0.15em] text-text-primary"
-      >
-        SENSING
-      </a>
+      <a href="#">                                      
+        <img src="/sensing_26_logo_f.svg" alt="Sensing" className="h-8" />                                                    
+      </a>  
 
       <nav className="flex items-center gap-8">
         {navItems.map((item) => (
