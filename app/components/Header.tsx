@@ -2,7 +2,12 @@
 
 import { useEffect, useState } from "react";
 
-const navItems = ["SOLUÇÕES", "DIFERENCIAIS", "TECNOLOGIA", "CONTATO"];
+const navItems = [
+  { label: "SOLUÇÕES", href: "/solucoes" },
+  { label: "DIFERENCIAIS", href: "/#diferenciais" },
+  { label: "TECNOLOGIA", href: "/#tecnologia" },
+  { label: "CONTATO", href: "/#cta" },
+];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,18 +37,18 @@ export default function Header() {
             : "bg-bg-page"
         }`}
       >
-        <a href="#">
+        <a href="/">
           <img src="/sensing_26_logo_f.svg" alt="Sensing" className="h-6 md:h-8" />
         </a>
 
         <nav className="hidden md:flex items-center gap-4 lg:gap-8">
           {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="nav-link text-xs font-medium tracking-[0.08em] text-text-secondary hover:text-text-primary transition-colors duration-300"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </nav>
@@ -72,12 +77,12 @@ export default function Header() {
           <nav className="flex flex-col gap-6">
             {navItems.map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={item.label}
+                href={item.href}
                 onClick={() => setMenuOpen(false)}
                 className="font-mono text-2xl font-extralight tracking-[0.08em] text-text-primary"
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </nav>
