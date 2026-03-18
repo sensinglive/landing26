@@ -32,10 +32,14 @@ npm run dev
 - Fonts: Geist (body), Geist Mono (headings/display)
 - Color palette: light gray bg (#E8E9EB), teal cards (#0D4F4F, #147A7A, #2AB5B0), dark (#1A1A1A)
 
+## Domain
+- Production: `sensing.live` (DNS on GoDaddy)
+
 ## Pages
 - `/` — Landing page (hero, risk, solutions, ecosystem, public sector, platform stats, CTA form, footer)
 - `/solucoes` — Soluções internal page (use cases, how-it-works, stats)
 - `/datasheet` — Technical specifications (hardware, SaaS, WhatsApp API, mesh topology)
+- `/termos` — Termos de Uso (legal, 12 sections, LGPD-compliant). Company details are placeholders — replace [RAZÃO SOCIAL], [CNPJ], [ENDEREÇO]
 
 ## Reusable Section Components
 Located in `app/components/sections/`:
