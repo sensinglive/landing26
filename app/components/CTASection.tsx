@@ -63,7 +63,7 @@ export default function CTASection() {
         </p>
 
         {status === "success" ? (
-          <div className="reveal flex items-center h-14 px-5 bg-white/10 border border-white/20">
+          <div className="flex items-center h-14 px-5 bg-white/10 border border-white/20">
             <p className="font-sans text-sm text-white">
               Mensagem enviada com sucesso! Entraremos em contato em breve.
             </p>
