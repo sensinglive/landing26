@@ -1,7 +1,10 @@
 const footerCols = [
   {
     title: "EMPRESA",
-    links: [{ label: "Contato", href: "#cta" }],
+    links: [
+      { label: "Contato", href: "#cta" },
+      { label: "Data Sheet", href: "/datasheet" },
+    ],
   },
   {
     title: "LEGAL",
