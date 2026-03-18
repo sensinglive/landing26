@@ -90,7 +90,7 @@ export default function PlatformSection() {
   const ref = useReveal();
 
   return (
-    <section ref={ref} id="soluções" className="px-5 md:px-8 lg:px-20 py-12 lg:py-20">
+    <section ref={ref} id="plataforma" className="px-5 md:px-8 lg:px-20 py-12 lg:py-20">
       <div className="flex flex-col gap-8 md:gap-12 lg:gap-16">
         <span className="reveal text-[10px] font-normal tracking-[0.25em] text-text-tertiary font-sans">
           PLATAFORMA

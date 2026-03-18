@@ -22,7 +22,7 @@ export default function Footer() {
         {/* Top row */}
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           <div className="flex flex-col gap-4 max-w-full md:max-w-[340px]">
-            <a href="#">
+            <a href="/">
               <img src="/sensing_26_logo_f_w.svg" alt="Sensing" className="h-10 md:h-12" />
             </a>
             <p className="font-sans text-sm font-normal leading-[1.6] text-white/30">
