@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
-    const { name, email, institution } = await request.json();
+    const { name, email, institution, phone, message } = await request.json();
 
     if (!name || !email) {
       return NextResponse.json(
@@ -32,7 +32,9 @@ export async function POST(request: Request) {
         <table style="border-collapse:collapse;font-family:sans-serif;">
           <tr><td style="padding:8px 16px 8px 0;color:#666;">Nome</td><td style="padding:8px 0;">${name}</td></tr>
           <tr><td style="padding:8px 16px 8px 0;color:#666;">E-mail</td><td style="padding:8px 0;"><a href="mailto:${email}">${email}</a></td></tr>
+          <tr><td style="padding:8px 16px 8px 0;color:#666;">Telefone</td><td style="padding:8px 0;">${phone || "—"}</td></tr>
           <tr><td style="padding:8px 16px 8px 0;color:#666;">Instituição / Cidade</td><td style="padding:8px 0;">${institution || "—"}</td></tr>
+          ${message ? `<tr><td style="padding:8px 16px 8px 0;color:#666;vertical-align:top;">Mensagem</td><td style="padding:8px 0;">${message}</td></tr>` : ""}
         </table>
       `,
     });

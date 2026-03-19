@@ -6,7 +6,7 @@ const navItems = [
   { label: "SOLUÇÕES", href: "/solucoes" },
   { label: "DIFERENCIAIS", href: "/#diferenciais" },
   { label: "TECNOLOGIA", href: "/#tecnologia" },
-  { label: "CONTATO", href: "/#cta" },
+  { label: "CONTATO", href: "/contato" },
 ];
 
 export default function Header() {
