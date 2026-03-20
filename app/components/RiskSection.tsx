@@ -36,8 +36,9 @@ export default function RiskSection() {
             Sua unidade está em conformidade agora?
           </h2>
           <p className="reveal font-sans text-sm md:text-base font-normal leading-[1.6] text-text-secondary max-w-full md:max-w-[700px]">
-            Uma oscilação de 2°C pode invalidar um lote inteiro — e gerar
-            interdição pela Vigilância Sanitária.
+            Interdição pela Vigilância Sanitária? Prejuízo financeiro por perda de medicação?? 
+            Erros humanos e trabalho manual para monitoramento?! Uma oscilação de temperatura pode levar à perda de centenas de doses de vacina. 
+            Mas esse nem é o maior problema... Expor medicamentos a temperturas inadequadas, seja de 1°C por meia hora, pode comprometer a imunidade de uma criança — ESSE É O PROBLEMA REAL QUE EVITAMOS!
           </p>
         </div>
 
