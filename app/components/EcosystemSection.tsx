@@ -15,7 +15,18 @@ const ecosystemCards = [
     descColor: "text-white/80",
   },
   {
-    num: "02 — PLUG",
+    num: "02 — SENSOR",
+    title: "A Tela",
+    name: "Sensor D2",
+    desc: "Conectividade WiFi independente sem necessidade de Gateway. Display LCD para leitura imediata no ponto. Ideal para ambientes com Wi-Fi disponível.",
+    bg: "bg-bg-dark",
+    catColor: "text-white/50",
+    titleColor: "text-white",
+    nameColor: "text-white",
+    descColor: "text-white/80",
+  },
+  {
+    num: "03 — PLUG",
     title: "O Ouvido",
     name: "Smart Plug P1",
     desc: "Analisa o consumo elétrico e amplifica o sinal da rede em toda a unidade. Detecta falhas antes que aconteçam.",
@@ -26,7 +37,7 @@ const ecosystemCards = [
     descColor: "text-white/80",
   },
   {
-    num: "03 — GATEWAY",
+    num: "04 — GATEWAY",
     title: "O Coração",
     name: "Gateway G1",
     desc: "Coordena tudo e garante que, aconteça o que acontecer, a informação chegue até você com segurança total.",
@@ -54,7 +65,7 @@ export default function EcosystemSection() {
           Sensing.
         </h2>
         <p className="reveal font-sans text-sm md:text-base font-normal leading-[1.6] text-text-secondary max-w-full md:max-w-[600px]">
-          Três componentes integrados que garantem monitoramento contínuo e
+          Quatro componentes integrados que garantem monitoramento contínuo e
           confiável da sua cadeia fria.
         </p>
 

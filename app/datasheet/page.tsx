@@ -24,6 +24,18 @@ const sensorSpecs = [
   { label: "Fixação", value: "Suporte magnético integrado ou adesivo industrial 3M" },
 ];
 
+const sensorD2Specs = [
+  { label: "Protocolo de Rede", value: "WiFi 2.4GHz (802.11 b/g/n) — conectividade autônoma, sem Gateway" },
+  { label: "Interface Visual", value: "Display LCD Digital com leitura local de temperatura e umidade" },
+  { label: "Precisão de Temperatura", value: "±1°C a ±5°C (aclimatação de 30 min para estabilização completa)" },
+  { label: "Precisão de Umidade", value: "±5% RH — sensor interno; sonda externa não mede umidade" },
+  { label: "Faixa de Temperatura (Sonda)", value: "Uso em freezers e câmaras frias" },
+  { label: "Frequência de Reporte", value: "Mínimo 2 minutos (gatilho por variação); ciclo padrão: 1 hora" },
+  { label: "Alimentação", value: "2 pilhas LR03/AAA 1.5V Alcalinas (não misturar marcas; não usar recarregáveis 1.2V)" },
+  { label: "Armazenamento Histórico", value: "7 dias, granularidade mínima de 1 hora (valor médio por período)" },
+  { label: "Compatibilidade de Plataforma", value: "Integração via Tuya Cloud API à plataforma sensing.live" },
+];
+
 const plugSpecs = [
   { label: "Tensão Operacional", value: "100V - 240V AC (Bivolt Automático)" },
   { label: "Corrente Máxima", value: "16A (contínua) / 20A (pico)" },
@@ -138,6 +150,16 @@ export default function DatasheetPage() {
 
           <SubSection
             number="1.2"
+            title="Sensor com Display D2"
+            description="Termo-Higrômetro WiFi com Display LCD — sensor autônomo com conectividade WiFi nativa. Opera sem Gateway, ideal para ambientes com rede Wi-Fi disponível ou como complemento ao ecossistema Zigbee."
+          >
+            <SpecTable rows={sensorD2Specs} />
+          </SubSection>
+
+          <div className="h-px bg-divider" />
+
+          <SubSection
+            number="1.3"
             title="Módulo de Potência P1"
             description="Smart Plug & Zigbee Router — dispositivo de dupla função: coletor de telemetria elétrica para manutenção preditiva e roteador de malha para expansão da rede Zigbee."
           >
@@ -147,7 +169,7 @@ export default function DatasheetPage() {
           <div className="h-px bg-divider" />
 
           <SubSection
-            number="1.3"
+            number="1.4"
             title="Gateway Coordenador G1"
             description="Hub & Edge Gateway — núcleo de inteligência local que coordena a rede mesh e gerencia o uplink de dados."
           >
