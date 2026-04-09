@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 };
 
 const sensorSpecs = [
-  { label: "Protocolo de Rede", value: "Zigbee 3.0 (IEEE 802.15.4)" },
   { label: "Interface Visual", value: "Display LCD de alto contraste com atualização a cada 10s" },
   { label: "Faixa de Temperatura (Sonda)", value: "-40°C a +85°C" },
   { label: "Precisão de Temperatura", value: "±0.3°C (em faixa operacional de vacinas)" },
@@ -25,7 +24,6 @@ const sensorSpecs = [
 ];
 
 const sensorD2Specs = [
-  { label: "Protocolo de Rede", value: "Zigbee 3.0 (requer Gateway G1)" },
   { label: "Função", value: "Detecção de abertura e fechamento de portas e janelas de câmaras frias e freezers" },
   { label: "Distância de Acionamento Magnético", value: "≥ 15mm" },
   { label: "Corrente em Repouso", value: "≤ 10µA" },
@@ -49,7 +47,6 @@ const plugSpecs = [
 ];
 
 const gatewaySpecs = [
-  { label: "Processador", value: "ARM Cortex-M4 ou equivalente" },
   { label: "Capacidade de Nós", value: "Até 128 dispositivos (sensores/tomadas) por Gateway" },
   { label: "Conectividade Uplink", value: "Ethernet RJ45 (10/100) + Wi-Fi 2.4GHz (802.11 b/g/n)" },
   { label: "Segurança", value: "Criptografia de Hardware AES-128 bits" },
@@ -62,7 +59,6 @@ const whatsappSpecs = [
   { label: "Protocolo de Alerta", value: "Notificação via WhatsApp Business API (Verificado)" },
   { label: "Latência de Envio", value: "< 10 segundos após detecção do evento crítico" },
   { label: "Estrutura do Alerta", value: "Nome do Equipamento, Localização, Valor de Excursão e Horário" },
-  { label: "Fluxo de Escalonamento", value: "Disparo hierárquico (Técnico → Gestor → Diretor) caso não haja confirmação de leitura" },
   { label: "Interatividade", value: "Botões de ação rápida para 'Reconhecer Alerta' ou 'Abrir Chamado de Manutenção'" },
 ];
 
@@ -265,21 +261,21 @@ export default function DatasheetPage() {
               Topologia da Solução (Mesh Networking)
             </h2>
             <p className="font-sans text-sm md:text-base font-normal leading-[1.6] text-text-secondary max-w-[700px]">
-              A solução sensing.live utiliza o protocolo Zigbee 3.0 em topologia de malha (mesh).
+              A solução sensing.live utiliza protocolo de rádio frequência de baixo consumo em topologia de malha (mesh), projetado para ambientes industriais e de saúde.
             </p>
           </div>
           <BulletList
             items={[
               {
-                title: "Sensores (End Devices)",
+                title: "Sensores (Nós de Extremidade)",
                 desc: "Coletam dados e enviam para o roteador mais próximo.",
               },
               {
-                title: "Smart Plugs (Routers)",
+                title: "Smart Plugs (Roteadores de Malha)",
                 desc: "Amplificam o sinal e garantem que o dado ignore barreiras metálicas e paredes de alvenaria.",
               },
               {
-                title: "Gateway (Coordinator)",
+                title: "Gateway (Coordenador Central)",
                 desc: "Centraliza a malha e transmite via TLS/SSL para a nuvem da sensing.live.",
               },
             ]}
