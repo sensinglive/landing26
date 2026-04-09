@@ -16,9 +16,9 @@ const ecosystemCards = [
   },
   {
     num: "02 — SENSOR",
-    title: "A Tela",
+    title: "O Sentinela",
     name: "Sensor D2",
-    desc: "Conectividade WiFi independente sem necessidade de Gateway. Display LCD para leitura imediata no ponto. Ideal para ambientes com Wi-Fi disponível.",
+    desc: "Detecta abertura e fechamento de câmaras frias e freezers em tempo real. Alerta imediato quando uma porta é deixada aberta, prevenindo excursões térmicas por falha operacional.",
     bg: "bg-bg-dark",
     catColor: "text-white/50",
     titleColor: "text-white",

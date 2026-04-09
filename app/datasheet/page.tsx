@@ -25,15 +25,16 @@ const sensorSpecs = [
 ];
 
 const sensorD2Specs = [
-  { label: "Protocolo de Rede", value: "WiFi 2.4GHz (802.11 b/g/n) — conectividade autônoma, sem Gateway" },
-  { label: "Interface Visual", value: "Display LCD Digital com leitura local de temperatura e umidade" },
-  { label: "Precisão de Temperatura", value: "±1°C a ±5°C (aclimatação de 30 min para estabilização completa)" },
-  { label: "Precisão de Umidade", value: "±5% RH — sensor interno; sonda externa não mede umidade" },
-  { label: "Faixa de Temperatura (Sonda)", value: "Uso em freezers e câmaras frias" },
-  { label: "Frequência de Reporte", value: "Mínimo 2 minutos (gatilho por variação); ciclo padrão: 1 hora" },
-  { label: "Alimentação", value: "2 pilhas LR03/AAA 1.5V Alcalinas (não misturar marcas; não usar recarregáveis 1.2V)" },
-  { label: "Armazenamento Histórico", value: "7 dias, granularidade mínima de 1 hora (valor médio por período)" },
-  { label: "Compatibilidade de Plataforma", value: "Integração via Tuya Cloud API à plataforma sensing.live" },
+  { label: "Protocolo de Rede", value: "Zigbee 3.0 (requer Gateway G1)" },
+  { label: "Função", value: "Detecção de abertura e fechamento de portas e janelas de câmaras frias e freezers" },
+  { label: "Distância de Acionamento Magnético", value: "≥ 15mm" },
+  { label: "Corrente em Repouso", value: "≤ 10µA" },
+  { label: "Corrente em Alarme", value: "≤ 160mA" },
+  { label: "Tensão de Operação", value: "DC 3V — 2 pilhas LR03/AAA 1.5V Alcalinas" },
+  { label: "Tensão Mínima (Alerta de Bateria Fraca)", value: "≤ 2.7V" },
+  { label: "Temperatura de Operação", value: "-10°C a +50°C" },
+  { label: "Umidade de Operação", value: "Até 95% RH" },
+  { label: "Instalação", value: "Fita dupla face ou parafusos (inclusos). Sem ferramentas especiais." },
 ];
 
 const plugSpecs = [
@@ -150,8 +151,8 @@ export default function DatasheetPage() {
 
           <SubSection
             number="1.2"
-            title="Sensor com Display D2"
-            description="Termo-Higrômetro WiFi com Display LCD — sensor autônomo com conectividade WiFi nativa. Opera sem Gateway, ideal para ambientes com rede Wi-Fi disponível ou como complemento ao ecossistema Zigbee."
+            title="Sensor de Porta D2"
+            description="Sensor de Contato Magnético Zigbee — nó de extremidade para detecção de abertura e fechamento de portas de câmaras frias, geladeiras e freezers. Integrado ao ecossistema Zigbee via Gateway G1."
           >
             <SpecTable rows={sensorD2Specs} />
           </SubSection>
